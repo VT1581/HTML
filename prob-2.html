@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Candidate Details</title>
+    </head>
+    <body style="background-color: skyblue;">
+        <form method="post">
+            <table border="3">
+                <tr>
+                    <td>Name:*</td>
+                    <td>
+                        <input type="text" name="name" maxlength="15">
+                    </td>
+                </tr>  
+                <tr>
+                    <td>Password:*</td>
+                    <td>
+                        <input type="text" name="password"  maxlength="15">
+                    </td>
+                </tr>   
+                <tr>
+                    <td>Phone number:*</td>
+                    <td>
+                        <input type="number" max="10">
+                    </td>
+                </tr>  
+                <tr>
+                    <td>Gender:*</td>
+                    <td>
+                        <input type="radio" value="Male" name="Gender">Male
+                        <input type="radio" value="Female" name="Gender">Female
+                    </td>
+                </tr> 
+                <tr>
+                    <td>Date of Birth:*</td>
+                    <td>
+                        <input type="date"  max="10/01/2023">
+                    </td>
+                </tr>    
+                <tr>
+                    <td>Email:*</td>
+                    <td>
+                        <input type="email" regexp="^[a-zA-Z0-9._-]+@[a-zA-Z0-9]+\\.[a-zA-Z0-9.]{2,5}">
+                    </td>
+                </tr>    
+                <tr>
+                    <td> Highest Qualification:*</td>
+                    <td>
+                        <select name="pref" value="Select Highest Qualification">
+                            <option value="B Tech">B Tech</option>
+                            <option value="M Tech">M Tech</option>
+                            <option value="B Tech">B Tech</option>
+                            <option value="MBA">MBA</option>
+                            <option value="MCA">MCA</option>
+                            <option value="Msc">Msc</option>
+                            <option value="BSC">BSC</option>
+                            <option value="MA">MA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Courses Interested in:*</td>
+                    <td> 
+                        <input type="checkbox" name="crs" value="Java">Java
+                        <input type="checkbox" name="crs" value="HTML 5">HTML 5
+                        <input type="checkbox" name="crs" value="CSS 3">CSS 3
+                        <input type="checkbox" name="crs" value="Angular JS">Angular JS
+                        <input type="checkbox" name="crs" value="JQuery">JQuery
+                    </td>
+                </tr>
+                <tr>
+                    <td>Comments:(Mention External Certifications if any</td>
+                    <td>
+                        <textarea rows="5" name="addr"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Upload Degree/External Certificates:*</td>
+                    <td>
+                        <input type="file" name="fnm" size="15" value="Choose Files">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit"  value="Submit information">
+                        <input type="reset"  value="clear">
+                    </td>
+                </tr>
+                
+            </table>
+            <footer style="color:red" colspan="1">
+                all fields marked (*) are mandatory
+            </footer>
+        </form>
+    </body>
+</html>
